@@ -1,0 +1,8 @@
+<u>Ninguno</u>
+Solo los administradores del contrato pueden ver los incidentes del sitio en su fila 'Incidentes del Sitio'
+
+<u>Contactos Nombrados</u>
+Los Contactos Nombrados son los autorizados para ver los Incidentes del Sitio registrados bajo su contrato.
+        
+<u>Todos Los Contactos</u>
+Todos Los Contactos del Sitio pueden ver todos los Incidentes independientemente si tienen derecho o no de registrar alguno.

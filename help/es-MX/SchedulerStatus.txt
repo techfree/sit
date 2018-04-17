@@ -1,0 +1,1 @@
+Una tarea programada debe de habilitarse para que pueda ser ejecutada. Si el estado de una acción es 'Deshabilitado' nunca se ejecutará.

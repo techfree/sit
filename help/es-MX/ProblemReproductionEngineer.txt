@@ -1,0 +1,2 @@
+¿El problema existe en más de una máquina?
+¿Qué pasos son necesarios para reproducir este problema?

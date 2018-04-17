@@ -1,0 +1,1 @@
+Betrag um die das Kundenkonto maximal überzogen werden darf, bevor weitere Zeitaufschreibungen gesperrt werden. 

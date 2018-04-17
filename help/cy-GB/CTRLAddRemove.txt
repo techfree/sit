@@ -1,0 +1,3 @@
+At adia hychwaneg chan 'r ddetholiad bwyso i lawr 'r CTRL agoriad a chlecia acha 'ch ddewisiadau 
+
+At dynnu ddewisiadau adiedig at camgymera bwyso i lawr 'r CTRL agoriad, a chlecia at deselect.

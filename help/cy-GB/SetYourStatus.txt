@@ -1,0 +1,3 @@
+* Yn cyfleu 'ch status at ' Mo yn ' cymeryd ai a status sy mo yn cymeryd, e.g. ' Absenola 'n ' adwythig ewyllysia 'n awtomatig reassign 'ch chyfrangau at 'ch substitutes fel benedig i mewn ' 'm substitutes'.
+
+* Yn cyfleu 'ch status bacia at ' yn ' cymeryd ewyllysia reassign pawb chyfrangau a ca mo had unrhyw gweithgaredd bacia at yourself.

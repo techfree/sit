@@ -1,0 +1,546 @@
+<!-- This text was compiled by including text from the following wiki pages:
+ * http://sitracker.org/wiki/About_SiT/DE
+ * http://sitracker.org/wiki/Incident/DE
+ * http://sitracker.org/wiki/Adding_Incidents/DE
+ * http://sitracker.org/wiki/Incident_Queues/DE
+ * http://sitracker.org/wiki/All_Incidents/DE
+ * http://sitracker.org/wiki/Reassign_Incident/DE
+ * http://sitracker.org/wiki/SLA/DE
+ * http://sitracker.org/wiki/Closing_Incidents/DE
+ * http://sitracker.org/wiki/Site/DE
+ * http://sitracker.org/wiki/Contact/DE
+ * http://sitracker.org/wiki/Contract/DE
+ * http://sitracker.org/wiki/Skills/DE
+ * http://sitracker.org/wiki/Tags/DE
+ * http://sitracker.org/wiki/Activities/DE
+ * http://sitracker.org/wiki/Triggers/DE
+ * http://sitracker.org/wiki/Managing_Users/DE
+ -->
+<ul>
+    <li><a href='#about'>Über den Support Incident Tracker</a></li>
+    <li>Support
+    <ul>
+        <li><a href='#incidents'>Tickets</a></li>
+        <li><a href='#addincident'>Ticket hinzufügen</a></li>
+        <li><a href='#incidentqueues'>Ticket-Schlangen</a></li>
+        <li><a href='#watchincidents'>Alle Tickets anzeigen</a></li>
+        <li><a href='#servicelevels'>Dienstezusagen (SLA)</a></li>
+        <li><a href='#activities'>Tätigkeiten mit Zeitaufschreibung</a></li>
+        <li><a href='#reassigning'>Ticket neu zuordnen</a></li>
+        <li><a href='#closeincident'>Ticket abschliessen</a></li>
+    </ul>
+    </li>
+    <li><a href='#customers'>Kunden</a></li>
+    <li><a href='#contracts'>Verträge</a></li>
+    <li><a href='#softwareproducts'>Fachbereiche und Produkte</a></li>
+    <li><a href='#tags'>Tags</a></li>
+    <li><a href='#triggers'>Trigger</a></li>
+    <li>Systemeinstellungen
+    <ul>
+        <li><a href='#adduser'>Bearbeiter/innen hinzufügen</a></li>
+        <li><a href='#disableuser'>Bearbeiter/innen entfernen</a></li>
+    </ul>
+    <li><a href='#morehelp'>Weitere Hilfe</a></li>
+</ul>
+
+<h3><a name='about'>Über den Support Incident Tracker</a></h3>
+
+<p>Der <a href="http://sitracker.org/" class="external text" rel="nofollow">Support Incident Tracker</a> 
+(oder SiT!) ist <a href="http://www.gnu.org/philosophy/free-sw.de.html" class="external text" rel="nofollow">Freie Software</a> 
+lizensiert unter der <i>GNU General Public License</i> (<a href="http://www.gnu.org/licenses/" class="external text" rel="nofollow">GPL</a>). 
+Es handelt sich um eine Webanwendung, die in der Programmiersprache
+ <a href="http://www.php.net/" class="external text" rel="nofollow">PHP</a> geschrieben ist und 
+ zur Datenhaltung die Datenbanksoftware <a href="http://www.mysql.com/" class="external text" rel="nofollow">MySQL</a> nutzt. </p>
+
+<p>Die Anwendung dient zur Verwaltung von Anfragen (die per Telefon, Webformular oder E-Mail gestellt werden können) 
+ und Vorgansverfolgung im technischen Support (Hotline etc.).
+Bearbeiten und speichern Sie Kontaktpersonen, Niederlassungen, Support-Verträge und -Anfragen (Tickets) zusammen in einem System. 
+Senden und empfangen Sie E-Mails direkt im SiT!. Zum Vorgang gehörige Dateien können gleich dort angehängt werden und 
+im Ticket-Log finden Sie jegliche den Vorgang betreffende Kommunikation festgehalten. SiT! beachtet die Dienstezusagen 
+(Service Level Agreements oder SLA), die Sie in Ihren Support-Verträgen zugesichert haben und warnt die Bearbeiter/innen 
+in Fällen, wo diese nicht eingehalten werden oder die Überschreitung der Fristen droht.</p>
+
+<h3><a name='incidents'>Tickets</a></h3>
+
+<p>Tickets sind der Dreh- und Angelpunkt in SiT! Die englischsprachige Version des <i>Support Incident Tracker</i> nutzt 
+an der Stelle das Wort 'Incident', was man als 'Vorfall' oder 'Ereignis' übersetzen kann. Etwas konkreter ist in vielen
+ ähnlichen Systemen die Rede von Support-Anfragen, Kundendienstanforderungen oder Helpdesk-Tickets. 
+ In der deutschen Übersetzung von SiT! haben wir uns dazu entschlossen den Begriff 'Ticket' zu verwenden und 
+damit auf das Datenobjekt zu referenzieren, das bei Eingang der Anfrage im System angelegt wird.</p>
+
+<p>Bezug auf Tickets nehmen Sie üblicherweise mit Verweis auf deren eindeutige Nummer, 
+hier 'Ticket-Nummer' genannt. Tickets haben einen Titel (der das Anliegen bezeichnet), 
+ein Produkt (für das Unterstützung in Anspruch genommen wird),
+einen Vertrag (innerhalb dessen die Unterstützung geleistet wird) und 
+eine Kontaktperson (die die Anfrage gestellt hat) und möglicherweise weitere Informationen.</p>
+
+<p>Wenn ein Ticket erstellt wurde, gibt es in der Regel eine Person, die das Ticket besitzt, 
+d.h. die für die Bearbeitung des Tickets zuständig ist. Solange das Ticket geöffnet ist, 
+kann der/die Besitzer/in wechseln, wenn das Ticket <a href='#reassigning'>neu zugeordnet</a> wird.</p>
+
+<p>Jedes Ticket hat einen aktuellen Status aus folgender Auswahl:</p>
+
+<ul><li> Aktiv
+</li><li> Geschlossen
+</li><li> Analyse erforderlich
+</li><li> Angerufen und Nachricht hinterlassen
+</li><li> Wartet auf Abschluss
+</li><li> Wartet auf Reaktion des Kunden
+</li><li> Wartet auf Rückmeldung von Mitarbeiter/in
+</li><li> Wartet auf Antwort des Supports
+</li><li> Kein Support
+</li></ul>
+
+<p>Tickets erhalten beim Schliessen zusätzlich einen Abschluss-Status:</p>
+
+<ul><li> Aktion durchgeführt
+</li><li> Dublette
+</li><li> Eskaliert
+</li><li> Nicht länger relevant
+</li><li> Fehler gemeldet
+</li><li> Informationen versandt
+</li><li> Problem gelöst
+</li><li> Support abgelaufen
+</li><li> Ungelöst
+</li><li> Kein Support
+</li></ul>
+
+<p>Zu jedem Ticket wird ein sogenanntes 'Ticket-Log' geführt. 
+Dort finden sich Einträge zu allen Fortschreibungen, die das Ticket im Laufe seines Lebens erfahren hat. 
+Es ist eine komplette Aufzeichnung aller Kontakte zum Kunden, zu Mitarbeiter/innen des Teams sowie mit externen Ingenieur/innen.</p>
+
+<p>Den Tickets können auch Dateien angehängt werden.</p>
+
+<h3><a name='addincident'>Ticket hinzufügen</a></h3>
+
+<p>Hinweis: Bevor Sie ein Ticket erstellen können, muss ein Vertrag existieren, 
+der die Kontaktperson berechtigt, Unterstützung anzufordern.</p>
+
+<p>Sie finden die Funktion zum <strong>Ticket hinzufügen</strong> in der Top-Navigation 
+(oben auf der Seite) unter Menüpunkt <strong>Support</strong>.</p>
+
+<p>Der Prozess zur Ticketerstellung besteht aus folgenden Schritten:</p>
+
+<ol>
+<li> Tragen Sie den Namen oder einen Teil des Namens der Kontaktperson in das Feld ein. 
+Falls Personen mit entsprechendem Namen existieren, erscheint eine Auswahlliste aus
+ der Sie die gesuchte Person heraus picken können. Klicken Sie dann auf den Button rechts <strong>Kontaktperson auswählen</strong></li>
+<li> Alternativ können Sie auch über den Link unter dem Eingabefeld <strong>Kontaktperson suchen</strong> 
+das Verzeichnis der Kontaktpersonen durchsuchen und, wenn Sie die betreffende Person gefunden haben, 
+den dort den rechts unter <strong>Aktion</strong> aufgeführten Link <strong>Ticket hinzufügen</strong> bemühen.</li>
+<li> In beiden Fällen erscheint auf der nächsten Seite eine Übersicht der Verträge, innerhalb derer die 
+Kontaktperson Support-Anfragen stellen darf. Klicken Sie beim passenden Vertrag auf den Link <strong>Ticket hinzufügen</strong>.</li>
+<li> Füllen Sie das Formular zum Ticket mit den Angaben zur vorliegenden Anfrage / Störungsmeldung. 
+Das Feld <strong>Betreff</strong> ist Pflicht und wird der Titel des Tickets werden. 
+Essenziell ist natürlich eine gute Beschreibung des gemeldeten Problems oder Anliegens. 
+Übrigens: Hilfe zum Ausfüllen der einzelnen Felder erhalten sie, wenn Sie mit der Maus über 
+die roten Fragezeichen fahren. Sind alle Eingaben gemacht, drücken Sie auf 
+den Button <strong>Ticket hinzufügen</strong> unten auf der Seite.</li>
+<li> Falls Sie SiT! per Systemkonfiguration angewiesen haben, Tickets automatisch zuzuordnen, 
+wurde das Ticket mit dem letzten Klick eben schon erstellt und der/dem für den Fachbereich 
+zuständigen Bearbeiter/in zugewiesen. SiT! informiert Sie dann noch, 
+in wessen Bearbeitungsschlange das Ticket platziert wurde.</li>
+<li> Falls Sie die automatische Zuordnung durch SiT! deaktiviert haben, weil Sie sie 
+auf manuellem Weg selbst zuordnen wollen, dann folgt nach der Ticketerstellung 
+noch die Anzeige der Übersicht der in Frage kommenden Bearbeiter/innen. 
+Klicken Sie auf den Link <strong>Zuordnen zu</strong> in der passenden Zeile. 
+Der Name von Bearbeiter/innen, die für den Fachbereich zuständig sind, ist zur Hervorhebung fett markiert. 
+Auch hier sagt Ihnen SiT! zum Schluss noch, wem das Ticket zugeordnet wurde.</li>
+</ol>
+
+<h3><a name='incidentqueues'>Ticket-Schlangen</a></h3>
+
+<p>SiT! arbeitet in mancher Hinsicht vielleicht etwas anders als die Vorgangsverfolgungssysteme
+/ Helpdesk-Anwendungen, die Sie bislang genutzt haben mögen.</p>
+
+<ul>
+  <li> Jede/r Bearbeiter/in kann Tickets anschauen und sogar bearbeiten, die anderen zugeordnet sind.</li>
+  <li> Tickets werden den Bearbeiter/innen zugeordnet, sobald sie im System eingehen,
+   anstatt sie in einer zentralen Warteschlange zu halten bis ein/e Bearbeiter/in entscheidet, sie aufzunehmen. 
+   (Die automatische Zuweisung kann allerdings in den Systemeinstellungen abgeschaltet werden.)</li>
+   <li> Tickets können über <a href='#reassigning'>Neuzuordnungen</a> sehr einfach von Bearbeiter/in zu Bearbeiter/in weitergereicht werden.</li>
+   <li>Bearbeiter/innen können ein Auge auf die Tickets ihrer Kolleg/innen halten, 
+   wenn sie Kenntnisse in den entsprechenden Fachbereichen haben.</li>
+ </ul>
+ 
+<p>Wir glauben, dass diese auf Zusammenarbeit bedachte Arbeitsweise, die bessere Methode ist. 
+Es fördert Teamwork und bewahrt davor, dass unbeliebte oder schwierige Fälle bis zuletzt liegen bleiben.</p>
+
+<h3>Verschiedene Arten von Ticket-Schlangen</h3>
+
+<p>Es gibt eine Anzahl von Ticket-Schlangen und sie arbeiten auf unterschiedliche Art und Weise. 
+Schauen wir sie uns im Einzelnen an.</p>
+
+<p>Wählen Sie im Menü <strong>Support</strong> -&gt; <strong>Meine Tickets</strong> (oder klicken Sie einfach auf den Punkt <strong>Support</strong>) 
+um die 'Aktion notwendig'-Schlange anzuzeigen. Von hier aus können Sie auch zur Ansicht der anderen Schlangen 
+'Warten', 'Alle Offenen' und 'Alle Erledigten' wechseln. </p>
+
+<hr />
+<h4>'Aktion notwendig'</h4>
+<p>Hier finden sich alle Tickets, die Ihnen zugeordnet sind und irgendwelche Aktionen von Ihrer Seite erfordern.
+In der normalen Sortierung erscheinen die Tickets oben, die am dringendsten bearbeitet werden müssen.
+Durch Klick auf die Spaltenüberschriften können Sie die Ansicht aber jederzeit nach Ihrem Bedarf umsortieren.</p>
+
+<h4>'Warten'</h4>
+<p>Diese Tickets sind Ihnen zugeordnet, erfordern aber derzeit keine Aktion von Ihnen.
+Meist warten sie auf Antwort von anderer Seite (z.B. darauf, dass die Kontaktperson Ihnen Logfiles zusendet)
+oder das Ticket wurde bis zu einem bestimmten Datum in die Warteschlange gestellt (Wiedervorlage).</p>
+
+<h4>'Alle Offenen'</h4>
+<p>Diese Ansicht zeigt alle offenen Vorgänge unabhängig von deren aktuellem Status. Es ist also die 
+Zusammenführung der beiden oben beschriebenen Schlangen.</p>
+
+<h4>'Alle Erledigten'</h4>
+<p>Wie der Name schon sagt, finden sich hier alle Fälle, die Ihnen zugeordnet waren und jetzt erledigt sind.</p>
+
+<hr />
+<p>Die Zeilen der verschiedenen Ticket-Übersichten (Schlangen) tragen farbliche Markierungen, die signalisieren, wie dringlich 
+der jeweilige Fall ist. Die Farbgebung variiert je nach Layout, das Sie in Ihren Einstellungen gewählt haben.
+Im Standardlayout sind die Zeilen normalerweise blau dargestellt. Sie werden gelb, wenn die Bearbeitungszeit in die Nähe der
+vorgesehenen Frist läuft und rot, wenn Sie unverzüglich handeln müssen.</p>
+
+<p>Fahren Sie mit dem Mauszeiger über den Titel des Tickets in der Zeile, 
+so erscheint eine kurze Info zur letzten Fortschreibung des Falls.</p>
+
+<h3> Ticketstatus and Bearbeitungsschlangen</h3>
+
+<p>Der <strong>Status</strong> eines Tickets entscheidet darüber, in welcher Schlange das Ticket platziert wird.
+In der 'Alle Erledigten' Schlange befinden sich einzig Tickets mit Status 'geschlossen', aber in den anderen Schlangen
+werden Tickets mit unterschiedlichen Stati geführt.</p>
+
+<p>Die 'Aktion notwendig'-Schlange enthält zwar überwiegend die Tickets mit Status 'aktiv', hier können aber auch Tickets
+mit anderem Status erscheinen, bei denen jetzt Aktivitäten der Bearbeiter/innen gefordert sind.
+Zum Beispiel wenn für Tickets mit Status 'Wartet auf Reaktion des Kunden', die übliche Wartezeit (definiert in 'Regular contact days')
+von 7 Tagen überschritten wird. Die Bearbeiter/innen sollten dann nochmal beim Kunden nachhaken.</p>
+
+<h3> Zuweisungsstation</h3>
+
+<p>Die 'Zuweisungsstation' ist etwas anders als die anderen Schlangen weil dort sowohl eingehende Mails wie auch Tickets zu finden sind.
+Die Anzeige erfolgt über das Menü <strong>Support</strong> -&gt; <strong>Zuweisungsstation</strong></p>
+
+<p>Diese spezielle Schlange hat vier Rubriken: 'Eingehende E-Mail', 'Spam E-Mail', 'Nicht zugewiesene Tickets' und 'Wartende Zuweisungen'.
+Hier befinden sich Objekte, die aus dem ein oder anderen Grund nicht automatisiert durch SiT! bearbeitet werden konnten.</p>
+
+<p>Eingehende E-Mail landet in dieser Schlange, wenn in deren Betreff keine sauber formatierte Ticketnummer gefunden wurde oder 
+wenn die dort angegebene Nummer Bezug auf ein Ticket nimmt, das bereits geschlossen wurde.
+Als SPAM werden E-Mails eingestuft, wenn deren Betreff einen entsprechenden kennzeichnenden Text enthält 
+(dieser kann durch Ihre Anti-SPAM Software, wie z.B. SpamAssasin, dort ergänzt werden) 
+und dann zur Durchsicht für Sie in der Schlange bereit gestellt.
+Im nächsten Abschnitt finden Sie direkt von Kunden neu erstellte Tickets, die auf Zuweisung an eine/n Bearbeiter/in warten.
+Der letzte Abschnitt zeigt Tickets, die zur Zeit keine/n Bearbeiter/in haben. SiT! verschiebt Tickets normalerweise in 
+die Bearbeitungsschlange der Vertreter/innen, wenn jemand abwesend ist (z.B. krank oder im Urlaub ist).
+Bei den Tickets hier war das nicht möglich, weil keine Vertretung verfügbar war.</p>
+
+<h3><a name='watchincidents'>Alle Tickets anzeigen</a></h3>
+
+<p>Sie können sich nicht nur Ihre eigene Ticket-Schlange, sondern <u>sämtliche</u> vorhandenen  Tickets anschauen, 
+unabhängig davon, wer dort als Bearbeiter/in vorgesehen ist. Wählen Sie dazu im Menü <strong>Support</strong> -&gt; <strong>Alle Tickets</strong>.
+Mithilfe der im Feld <strong>Schlange</strong> angezeigten Auswahlliste schalten Sie 
+dann einfach zwischen den verschiedenen Ticket-Übersichten 'Aktion notwendig', 
+'Warten' und 'Alle Offenen' um.</p>
+
+<p><u>Tipp:</u> Behalten Sie die Tickets mit einer entsprechenden Anzeige (watch_incidents) auf Ihrem SiT!-Armaturenbrett im Auge.</p>
+
+<h3><a name='reassigning'>Ticket neu zuordnen</a></h3>
+
+<p>Solange ein Ticket geöffnet ist, kann es von Bearbeiter/in zu Bearbeiter/in weitergereicht werden,
+so dass diverse Leute an der Lösung eines Tickets mitwirken können. Auf diese Weise kann man sich von anderen unterstützen lassen,
+z.B. wenn zuviel Fälle aufgelaufen sind und man die Arbeit alleine nicht mehr schaffen kann 
+oder auch falls jemand anderes spezielle oder bessere Kenntnisse im gefragten Bereich hat.</p>
+
+<p>Um eines Ihrer Tickets an eine/n andere/n abzutreten, wählen Sie den Reiter <strong>Neu zuordnen</strong>
+in der Detailansicht (Popup-Window) des Tickets. SiT! wird Ihnen daraufhin 
+- mit Namensfeld in Fettdruck und grün hinterlegt - eine Person vorschlagen,
+die es auf Basis der aktuellen Auslastung und geforderten Fachkenntnisse für geeignet hält, das Ticket zu übernehmen.
+Wenn Sie den Vorschlag nicht annehmen sondern selbst jemand bestimmen wollen, 
+klicken Sie auf den mit <strong>N mehr...</strong> (N = Anzahl weiterer Bearbeiter/innen)
+beschrifteten Link und wählen Sie aus der dann aufgeschlagenen Liste Ihre/n Wunschkandidat/in. 
+Personen, die entsprechende Fachbereiche vertreten, erkennen Sie dabei an den Namen im Fettdruck.</p>
+
+<h3>Temporäre Zuordnung</h3>
+
+<p>Eine weitere Möglichkeit ist die <i>vorübergehende Zuordnung</i> eines Tickets an eine/n andere/n.
+In dem Fall bleibt man grundsätzlich Eigentümer/in des Tickets und ergänzt nur eine
+'Temporäre Zuständigkeit' der anderen Person. Diese wird das Ticket dann auch in ihrer eigenen 
+Ticket-Schlange sehen. Die Konstruktion ist sinnvoll, wenn man zu zweit gleichzeitig an der 
+Lösung des Tickets arbeitet. Ausserdem nutzt SiT! selbst diese Methode zur automatischen
+Zuordnung von Tickets an die Vertreter/innen, wenn jemand Abwesenheit signalisiert.</p>
+
+<h4>Temporäre Zuordnung aufheben</h4>
+
+<p>Wenn Sie (als vorübergehend Zuständige/r) Ihre Arbeiten am Ticket beendet haben, rufen Sie das 'Neu zuordnen'-Formular auf und 
+machen im Feld  'Bearbeiter/in' einen Haken bei <strong>Temporäre/n Besitzer/in entfernen</strong></p>
+
+<p>Im gleichen Formular können Sie das Ticket auch jemand anderem zuordnen. 
+Wählen Sie dazu einfach den Datensatz der betreffenden Person aus der Liste oben aus
+und haken im Feld 'Bearbeiter/in' die Option <strong>Besitzer/in ändern</strong> oder <strong>Temporäre/n Besitzer/in ändern</strong> an, je nachdem
+ob der Wechsel die vorübergehend oder original zuständige Person betrifft.</p>
+
+<h4>Automatische temporäre Zuordnungen</h4>
+
+<p>Signalisiert die Person, die für die Bearbeitung der Tickets zuständig ist, dass sie abwesend ist oder die 'Annahme von Tickets' ablehnt,
+dann wird SiT! die somit verwaisten Tickets automatisch ihrer Vertretung zuordnen.
+Sie wandern wieder zurück zur ursprünglich zuständigen Person, sobald diese laut Status wieder anwesend ist und Tickets annimmt.
+Tickets, die von der Vertretung zwischenzeitlich fortgeschrieben wurden, verbleiben dort und werden nicht automatisch zurückgegeben.</p>
+
+<h3><a name='servicelevels'>Dienstezusagen (SLA)</a></h3>
+
+<p>Jedes erzeugte Ticket wird mit einer Dienstezusage (In englischer Fachsprache einem <i>Service Level</i> oder 
+<i>Service Level Agreement</i> (SLA)) verknüpft. Welche den betreffenden Kunden zur Verfügung stehen, wird im 
+Vertrag vereinbart. In der Grundinstallation kennt SiT nur die Dienstezusage 'Standard', aber Sie können unter Menüpunkt 
+<strong>SiT!</strong> -&gt; <strong>Systemeinstellungen</strong> -&gt; <strong>Dienstezusagen</strong> weitere Stufen nach Ihrem Bedarf ergänzen.</p>
+
+<p>Je nach Einstufung des Falls ist in der Zusage festgelegt, wieviel Zeit zur Erreichung der Ziele der Dienstezusage auf dem Lösungsweg
+maximal zur Verfügung steht. So kann Ihr Team bestmöglich darauf hinarbeiten, dass es die dem Kunden vertraglich zugesagte Leistung erbringt.
+Die Fristen können Sie je nach Dringlichkeit unterschiedlich setzen und damit schnellere Reaktionen in dringenden Fälle vorsehen.</p>
+
+<p>Ziele der Dienstezusage sind:</p>
+<ul>
+  <li> Anfängliche Reaktion</li>
+  <li> Problembeschreibung</li>
+  <li> Aktionsplan</li>
+  <li> Lösung/Priorität anpassen</li>
+  <li> Nachprüfung<sup>*</sup></li>
+</ul>
+
+<p>Die Zielerreichung geben Sie mit Fortschreibung des Tickets bekannt oder auch beim Senden einer E-Mail via SiT! indem Sie im Formular
+das entsprechende Ziel aus der Liste wählen.</p>
+
+<p><sup>*</sup> Die Nachprüfung ist ein spezielles Ziel, dessen Frist sich nicht im Ablauf von Arbeitstagen/-wochen bemisst.
+Es wird die gesamte Zeit verfolgt, die das Ticket im Status 'geöffnet' verbracht hat. Die Verordnung von Nachprüfungsfristen soll
+verhindern, dass ein Ticket ewig liegen bleibt oder sich die Bearbeitung im Kreise dreht. Eine Person soll dann darauf schauen und
+den Knoten lösen. Zur Eingabe des Nachprüfungsberichts wählen Sie bei der Fortschreibung das Ziel <strong>Nachprüfung</strong> aus der Liste.</p>
+
+<h4>Einfluss des Ticketstatus auf die Überwachung der Zielerreichung</h4>
+
+<p>Während der Bearbeitung eines Tickets wird sich sein Status mehrfach ändern.
+Zu Zeiten, wo die Zuständigkeit nicht in der Hand des Support-Teams liegt 
+(z.B. wenn auf Antwort des Kunden gewartet wird), hält die Uhr an und beginnt erst wieder zu ticken, 
+wenn der Status zu 'aktiv' wechselt.</p>
+
+<p>Die folgende Tabelle zeigt, wie sich die verschiedenen Stati bei der Zeitmessung auswirken.</p>
+
+<table border="1" cellpadding="8">
+<tr><th> Ticketstatus </th><th> Läuft die SLA Stoppuhr?</th></tr>
+<tr><td> aktiv </td><td> <strong>Ja</strong></td></tr>
+<tr><td> geschlossen </td><td> Nein</td></tr>
+<tr><td> Analyse erforderlich </td><td> <strong>Ja</strong></td></tr>
+<tr><td> Angerufen und Nachricht hinterlassen </td><td> <strong>Ja</strong></td></tr>
+<tr><td> Wartet auf Rückmeldung von Mitarbeiter/in </td><td> <strong>Ja</strong></td></tr>
+<tr><td> Wartet auf Antwort des Supports </td><td> <strong>Ja</strong></td></tr>
+<tr><td> Wartet auf Abschluss </td><td> Nein</td></tr>
+<tr><td> Wartet auf Reaktion des Kunden </td><td> Nein</td></tr>
+<tr><td> Kein Support </td><td> Nein</td></tr>
+</table>
+
+<h3><a name='activities'>Tätigkeiten mit Zeitaufschreibung</a></h3>
+
+<p><strong>Tätigkeiten</strong> sind Aufgaben mit Zeitaufschreibung. Diese SiT!-Funktion ist nützlich, 
+wenn Unterstützung auf Rechnung geleistet wird, abhängig davon wieviel Zeit für die Lösung eines 
+Tickets aufgewandt wurde.</p>
+
+<p>Die Idee dabei ist, dass Sie jedes Mal, wenn Sie an dem Ticket arbeiten, eine neue Tätigkeit starten 
+und diese beenden, sobald Sie aufhören an dem Ticket zu arbeiten.</p>
+
+<p class='info'>Der Reiter 'Tätigkeiten' erscheint <u>nur</u> bei bei Tickets die mit Zeitaufschreibung bearbeitet werden 
+und ist unsichtbar bei allen anderen.</p>
+
+<p>Bei einem frisch eröffneten Ticket ist die Seite mit den Tätigkeiten leer. 
+Sobald Sie eine neue Tätigkeit beginnen, läuft eine Stoppuhr für die aktuelle Tätigkeit an
+sowie eine für die Messung der ingesamt für alle Tätigkeiten in Anspruch genommenen Zeit.
+Bei Klick auf die laufende Nummer links auf der Zeile oder alternativ auf den Link <strong>Tätigkeit anzeigen</strong> rechts auf der Zeile 
+öffnet sich eine Seite, auf der Sie Notizen und Anmerkungen zu ihren Arbeiten im Rahmen der Tätigkeit eintragen können.
+Haben Sie die Tätigkeit beendet, klicken Sie auf <strong>Als erledigt kennzeichnen</strong> am Fuß der Anmerkungsseite.
+Damit werden alle Texte von der Seite sowie die Angabe zur in Anspruch genommenen Zeit als neuer Eintrag im Ticket-Log vermerkt.</p>
+
+
+<h3><a name='closeincident'>Ticket abschliessen</a></h3>
+
+<p>Sie können Tickets unmittelbar abschliessen oder zum Abschluss markieren.
+Die Letzteren werden nach 7 Tagen (Einstellung ist konfigurierbar) vom System geschlossen. 
+Wenn Sie die Kontaktperson über den bevorstehenden Abschluss informieren, hat sie noch Zeit zu prüfen, 
+ob alles zur Zufriedenheit gelöst wurde oder ob noch Fragen geblieben sind.</p>
+
+<p>Sie müssen sich an dem Punkt entscheiden, mit welchem Status das Ticket abgeschlossen wird.
+Daran läßt sich später schnell feststellen, ob das Problem gelöst wurde, der Auftrag erledigt ist oder die Frage beantwortet wurde.</p>
+
+<p>Folgende Auswahl steht zur Verfügung:</p>
+<ul>
+<li> Aktion durchgeführt</li>
+<li> Dublette</li>
+<li> Eskaliert</li>
+<li> Nicht länger relevant</li>
+<li> Fehler gemeldet</li>
+<li> Informationen versandt</li>
+<li> Problem gelöst</li>
+<li> Support abgelaufen</li>
+<li> Ungelöst</li>
+<li> Kein Support</li>
+</ul>
+
+
+<h3><a name='customers'>Kunden</a></h3>
+<p>Leute und Organisationen, die Sie mithilfe von SiT! unterstützen, bezeichnen wir allgemeiner auch als 'Kunden'.</p>
+
+<h4>Niederlassungen und Kontaktpersonen</h4>
+
+<p>Jede Organisation, die Unterstützung von Ihnen erhält, nennen wir <strong>Niederlassung</strong>. 
+Zu ihr können beliebig viele 'Kontaktpersonen' gehören.</p>
+
+<p>Eine Listenansicht der Niederlassungen erhalten Sie mit Menüauswahl 
+<strong>Kunden</strong> -&gt; <strong>Niederlassungen</strong> -&gt; <strong>Auflisten</strong>.
+Bei Klick auf den Namen der Niederlassung gelangen Sie dann zu deren Detailansicht, 
+inklusive einer Liste der mit ihr verbundenen Kontaktpersonen.</p>
+
+<p>Zur direkten Anzeige der Kontaktpersonen wählen Sie den Menüpunkt <strong>Kunden</strong> -&gt; <strong>Kontaktersonen</strong>.</p>
+
+<p>E-Mail-Adresse, Anschrift und Telefonnummer können Sie im Datensatz zur Person
+als geschützt kennzeichnen, wenn der Kunde keine Kontaktaufnahme über diesen Weg wünscht.</p>
+
+<p>Falls das SiT!-<a href="/wiki/Portal" title="Portal">Portal</a> aktiviert ist, können sich Kontaktpersonen
+dort einloggen um ihre vorhandenen Tickets anzuschauen, dort Angaben zu ergänzen oder um neue Anfragen zu stellen.</p>
+
+<p>Wir empfehlen Niederlassungen und Kontaktpersonen nie wieder zu löschen, sofern nicht unbedingt erforderlich. 
+Grund ist, dass eine Reihe Datensätze existieren, wie z.B. Verträge und Tickets, die auf die beiden Bezug nehmen.
+Falls Sie doch mal eine Niederlassung oder eine Kontaktperson löschen, wird SiT! Sie auffordern, einen Ersatz anzugeben,
+dem die verbleibenden Daten zugeordnet werden sollen.</p>
+
+
+<h3><a name='contracts'>Verträge</a></h3>
+
+<p>Bevor Sie einTicket für die Kontaktperson erstellen können, muss zunächst eine Vereinbarung 
+über den Anspruch auf Unterstützung geschlossen worden sein. Im SiT bezeichnen wir sie als 
+<strong>Vertrag</strong>. Um einen neuen Vertrag zu ergänzen, wählen Sie im Menü
+<strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; <strong>Neuer Vertrag</strong> und füllen das Formular entsprechend aus.</p>
+
+<p>Der Adminkontakt ist dabei Ansprechpartner für die vertraglichen Angelegenheiten. 
+Wer Anspruch auf Unterstützungsleistungen durch den Vertrag hat, wird danach noch gesondert festgelegt.</p>
+
+<p>Folgende Informationen zur getroffenen Vereinbarung finden sich in jedem Vertrag:</p>
+<ul>
+  <li>Welches <a href='#softwareproducts'>Produkt</a> unterstützt wird</li>
+  <li>Welche <a href='#servicelevels'>Dienstezusagen</a> gemacht werden</li>
+  <li>Die max. Anzahl der berechtigten Kontaktpersonen</li>
+  <li>Wieviele Tickets im Vertrag erstellt werden dürfen</li>
+  <li> zu welchem Datum der Vertrag abläuft</li>
+</ul>
+
+<p>Um von irgendeinem Nutzen zu sein, muss jedem Vertrag wenigstens eine Kontaktperson zugeordnet sein. 
+Dazu folgen Sie einfach dem Link <strong>Kontaktperson hinzufügen</strong> auf der Seite mit den Details zum Vertrag.
+Die dort angegebenen Kontaktpersonen sind als einzige berechtigt Tickets zu eröffnen.</p>
+
+<p>Sollen alle Personen einer Niederlassung unterstützt werden, setzen Sie den Haken bei 
+<strong>Alle Kontaktpersonen der Niederlassung werden unterstützt</strong> im Vertragsformular. 
+Dann haben alle mit der Niederlassung in Verbindung stehende Kontaktpersonen das Recht, 
+Support-Anfragen zu stellen, bzw. Tickets zu eröffnen.</p>
+
+<h3><a name='softwareproducts'>Fachbereiche und Produkte</a></h3>
+
+<p>Die Liste der sogenannten <strong>Fachbereiche</strong> zeigt in welchen Angelegenheiten Unterstützung durch SiT! geleistet wird.
+Legen Sie für jede Sache einen eigenen Datensatz an. Wenn Sie z.B. planen, Unterstützung für eine Software namens 'Debian GNU/Linux' 
+anzubieten, dann sollten Sie einen entsprechenden Fachbereich ergänzen mit Auswahl des Menüpunkts 
+<strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; <strong>Produkte &amp; Fachbereiche</strong> -&gt; <strong>Fachbereich hinzufügen</strong>.</p>
+
+<p>Legen Sie keine eigenen Fachbereiche zur Unterscheidung von Softwareversionen an,
+es sei denn die Art und Weise Ihrer Unterstützung für diese unterscheidet sich
+(z.B. wenn Sie den Support für eine alte Version einstellen wollen).
+Die Versions der Software wird bei <a href='#addincident'>Aufnahme des Tickets</a> abgefragt und bei seinen Daten gespeichert.
+Auf diese Weise können Sie den Fachbereich für alle unterstützen Versionen der Software nutzen.</p>
+
+<p>Um eine größere Anzahl von unterschiedlichen Softwareanwendungen zu verwalten, 
+nutzt SiT! dem übergreifenden Begriff der Produkte. Denken Sie sich das Produkt als 
+zusammengefasste Gruppe diverser Softwarepakete oder -anwendungen. 
+Wenn Sie z.B. Support für die folgenden drei Distributionen 'Debian GNU/Linux', 'SUSE Linux' and 'Mandriva Linux' anbieten,
+könnten Sie das unter dem Produktnamen 'Linux' bündeln.</p>
+
+<p>Um ein Produkt zu ergänzen rufen Sie das folgende Menü auf <strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; 
+<strong>Produkte &amp; Fachbereiche</strong> -&gt; <strong>Produkt hinzufügen</strong>.
+Dort wählen Sie den Lieferanten aus der Liste aus, geben einen Namen und eine Beschreibung für das Produkt ein
+und klicken auf 'Produkt hinzufügen'. Anschliessend ordnen Sie ihm noch seine Fachbereiche zu unter
+<strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; 
+<strong>Produkte &amp; Fachbereiche</strong> -&gt; <strong>Fachbereich hinzufügen</strong>.</p>
+
+<p>Um sich die vorhandenen Produkte samt zugeordneten Fachbereichen anzuschauen, rufen Sie
+folgendes Menü auf <strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; 
+<strong>Produkte &amp; Fachbereiche</strong> -&gt; <strong>Produkt auflisten</strong>.</p>
+
+<p>Produkte können auch nach Lieferanten gruppiert angezeigt werden. Um weitere Lieferanten zu ergänzen,
+wählen Sie im Menü  <strong>Kunden</strong> -&gt; <strong>Vertrag</strong> -&gt; 
+<strong>Produkte &amp; Fachbereiche</strong> -&gt; <strong>Lieferant/in hinzufügen</strong>.</p>
+
+<h3><a name='tags'>Tags</a></h3>
+
+<p>Ein 'Tag' (gesprochen 'täg') ist ein Schlagwort, das Sie im SiT! diversen Arten von Datenobjekten zuordnen können 
+(z.B. Tickets, Kontaktpersonen, Niederlassungen und Aufgaben). Sie erhalten damit eine schnelle und 
+einfache Möglichkeit, ausgewählte Objekte eigenen Kategorien zuzuweisen oder sie nach ihrem Belieben zu gruppieren.
+Ergänzen Sie ihre Tags im Bearbeitungsformular des entsprechenden Objekts. 
+Tragen Sie dazu einfach die Liste der Schlagworte (jedes nur aus einem Wort bestehend, 
+also ggf. mit Unterstrich oder Bindestrich arbeiten, wenn mehrere Begriffe darin auftauchen sollen) 
+getrennt durch Leerzeichen oder Komma in das Feld Tags ein.</p>
+
+<p>Die Armaturen-Anzeige 'Tags Dashlet' zeigt, falls aktiviert, die Tag Cloud (Liste aller verwendenten Tags) an. 
+Begriffe erscheinen darin in umso größerer Schrift, je häufiger sie zugeordnet wurden. 
+Bei Klick auf einen der Begriffe erhalten Sie eine Liste aller Objekte mit dem betreffenden Schlagwort.</p>
+
+<h3><a name='triggers'>Trigger</a></h3>
+
+<p>Ein <strong>Trigger</strong> wird durch das Eintreten eines Ereignisses im SiT! ausgelöst. Es gibt viele solche, z.B. ein Trigger, der 
+<i>feuert</i> sobald ein neues Ticket hinzugefügt wird. Sie können bestimmte Aktionen an diese Trigger binden, 
+z.B. dass eine Mitteilung oben in den SiT! Webseiten eingeblendet wird, sobald Ihnen ein Ticket zugewiesen wurde.</p>
+
+<p>Zur Konfiguration ihrer persönlichen Trigger-Aktionen wählen Sie im Menü <strong>SiT!</strong> -&gt; 
+<strong>Meine Einstellungen</strong> -&gt; <strong>Benachrichtigungen</strong></p>
+
+<p>Bei Trigger-Aktionen des Systems spielen die SiT! User üblicherweise keine Rolle. Es geht da z.B.
+um automatisch versandte E-Mails an die Kontaktpersonen oder darum, Ereignisse im System-Journal festzuhalten. 
+SiT!-Administrator/innen können die Systemaktionen unter folgendem Menüpunkt konfigurieren 
+<strong>SiT!</strong> -&gt; <strong>Systemeinstellungen</strong> -&gt; <strong>Systemaktionen</strong></p>
+
+<h3><a name='adduser'>Bearbeiter/innen hinzufügen</a></h3>
+
+<p>Wenn Sie die erforderlichen Rechte besitzen, können Sie neue Nutzerkonten für weitere Bearbeiter/innen ergänzen. 
+(Nutzer/in 'Admin' hat jedenfalls dieses Recht.)
+Rufen Sie dazu folgenden Punkt im Menü auf 
+<strong>Systemeinstellungen</strong> -&gt; <strong>Bearbeiter/innen</strong> -&gt; <strong>Bearbeiter/in hinzufügen</strong>.</p>
+
+<p>Der Nutzername muss im System eindeutig sein und darf keine Leerzeichen enthalten.
+Jede/r Bearbeiter/in muss eine E-Mailadresse haben.</p>
+
+<p>Es gibt drei mögliche Benutzerrollen</p>
+<ul>
+  <li> Administrator</li>
+  <li> Manager</li>
+  <li> User</li>
+</ul>
+
+<p>Jede Rolle gewährt unterschiedliche Rechte im System. Sie können die Zugriffsberechtigungen für jede Rolle ändern
+und auf Ihren Bedarf anpassen, wenn erforderlich.</p>
+
+<p>Nachdem Sie das neue Nutzerkonto angelegt haben, erscheint eine Übersicht aller vorhandenen Nutzerkonten.
+Rufen Sie dort ganz rechts den Link <strong>Rechte</strong> in der Zeile des entsprechenden Nutzerkontos auf, 
+wenn Sie ihm, über das von der Rolle geerbte Zugriffsprofil hinaus, noch einzelne weitere Berechtigungen verleihen wollen.
+Beachten Sie, dass sich die Rechte aufaddieren. Sie können dem/der Bearbeiter/in ein Recht, das durch die Rolle bereits verliehen wurde, 
+also nicht mehr wegnehmen. Bei Bedarf müssten Sie eine passendere Rolle zuweisen oder die Rechte der Rolle entsprechend ändern.</p>
+
+<h3><a name='disableuser'>Bearbeiter/innen entfernen</a></h3>
+
+<p>Um die Integrität der Daten zu bewahren, dürfen Bearbeiter/innen nicht aus SiT! gelöscht werden, 
+denn sonst würden die von ihr oder ihm bearbeiteten Tickets in der Luft hängen.
+Aber wir können Bearbeiter/innen aus dem aktiven Team nehmen und so verindern, 
+dass sie sich weiterhin einloggen können oder ihr Name in den Auswahllisten erscheint.</p>
+
+<p>Um ein Nutzerkonto zu deaktivieren rufen Sie im Menü 
+<strong>Systemeinstellungen</strong> -&gt; <strong>Bearbeiter/innen</strong> auf und klicken dort in 
+der entsprechenden Zeile rechts auf <strong>Bearbeiten</strong>. Bei den Benutzerdaten setzen Sie dann 
+im Feld 'Status' den Wert 'DISABLED ACCOUNT' und speichern das Ganze.</p>
+
+<p>Um das Nutzerkonto bei Bedarf zu reaktivieren, bearbeiten Sie das 
+Nutzerprofil einfach erneut und setzen den Status auf 'Im Büro'.</p>
+
+<hr />
+
+<h3><a name='morehelp'>Weitere Hilfe</a></h3>
+
+<p>In der Rubrik <a href="http://sitracker.org/wiki/Documentation/DE">Dokumentation</a> der
+ SiT! Homepage finden Sie unsere Liste der Antworten auf häufig gestellte Fragen (FAQ) und viele Seiten
+ mit eingehenden Anleitungs- und Hilfetexten zu SiT!</p>

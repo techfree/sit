@@ -1,0 +1,1 @@
+Ingrese una lista de valores separados por coma para describir las capacidades que usted tiene.

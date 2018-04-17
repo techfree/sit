@@ -1,0 +1,1 @@
+El número de minutos que refiere una 'unidad' cliente, esta es la unidad que se le factura al cliente en ej. 60 minutos por grupo.

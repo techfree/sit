@@ -1,0 +1,1 @@
+Restricted is info that is sensitive but could be mentioned if asked, for example: information about patch that is still in development.

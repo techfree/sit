@@ -1,0 +1,1 @@
+Revocar una noticia la remueve de todos los usuarios, independientemente si ha sido leída por ellos o no.

@@ -1,0 +1,3 @@
+Die Übersichtsseite bietet die Möglichkeit Komponenten (sogenannte 'Dashlets') einzubinden, die diverse Informationen in Kurzfassung hier einblenden.
+
+Sie können die Position an der die Infos eingeblendet werden durch Verschieben mit der Maus ändern oder mit Klick auf das Icon hier rechts weitere Komponenten hinzufügen oder vorhandene aus Ihrer Übesichtsseite entfernen.

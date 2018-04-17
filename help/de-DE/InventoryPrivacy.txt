@@ -1,0 +1,1 @@
+<em>Privat</em> bedeutet, dass niemand ausser dem/der Ersteller/in, Nutzername und Password sehen kann. Bei Auswahl von <em>Nur Admin</em> sieht nur der/die Administrator/in den Nutzernamen und das Passwort.

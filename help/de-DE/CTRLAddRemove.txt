@@ -1,0 +1,3 @@
+Um mehrere Objekte aus der Liste zu wählen, halten Sie die CTRL-Taste gedrückt, während Sie Ihre Auswahl treffen. 
+
+Um Objekte aus der Auswahl zu entfernen, halten Sie die CTRL-Taste gedrückt und klicken auf das zu entfernende Objekt.

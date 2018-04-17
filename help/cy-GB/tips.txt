@@ -1,0 +1,15 @@
+### SiT Usage Help Tips, one per line           (this first line is ignored)
+At log a 'n grai atega chyfranc ddethol <strong>Adia Chyfranc</strong> chan 'r <strong>Atega</strong> ddewislen.
+Adnabuoch a alli golyga arall bobloedd chyfranc chytau? Cer at <strong>SiT!</strong>-&gt;<strong>ddefnyddwyr</strong> a chlecia ddolen i mewn 'r <strong>Chyfrangau i mewn Chwt</strong> cholofn.
+Alli cadw chrau acha pawb 'r chyfrangau 'n rhedegol agor at yn cerdded at <strong>Atega</strong>-&gt;<strong>Bugeila Chyfrangau</strong>.
+At yn cyfleu 'ch celfyddydau (<strong>SiT!</strong>-&gt;<strong>'m Fanylion</strong>-&gt;<strong>'m Celfyddydau</strong>) chyfrangau a cei celfyddydau achos ewyllysia ledrithia i mewn 'ch chwt hyd yn oed pryd hwy re mo logged atat 'n benodol.
+At ca 'ch chyfrangau temporarily benodedig at substitute beirianyddion pryd chyfleaist 'ch status at ar gerdded chyflea i fyny a backup beiriannydd achos pob un chynnyrch 'ch Atega (<strong>SiT!</strong>-&gt;<strong>'m Fanylion</strong>-&gt;<strong>'m Substitutes</strong>).
+Safle all ca hun ai hychwaneg chyfamodau , pob un byrha specifies 'r chynnyrch sy ategedig , 'r rhifa chan chyfrangau a all bod logged a 'r chyffyrddiadau sy adawedig at log chyfrangau.
+Alli eheda ar 'r deitl chan chyfranc i mewn 'r chyfranc chwt at canfod a popup yn arddangos an dynnu chan 'r 'n ddiweddara update at 'r chyfranc.
+Chyfrangau all bod logged ag yn amrywio blaenau hyn adrodd wrth 'r impact 'r ddeillia ydy yn cael acha 'r chwsmer. Chan <em>beichia</em> a indicates hychydig ai na impact at <em>'n beryglus</em> a indicates 'n aethus impact.
+Pryd cerddi ar gerdded chan 'r swydd , chyflea 'ch status yn arfer 'r ddefnynna - i lawr baffio acha 'r gwynebu dudalen , hon ewyllysia 'n awtomatig benodi 'ch chyfrangau at 'ch substitue beiriannydd(ion).
+Pryd farci dasg fel 'n Breifat dydy 'n weladwy ond atat a 'n ddefnyddiol arwedd achos 'n fyr reminders.
+Adnabuoch a alli benodi arbitary tags at chyfrangau , dasgau , chyffyrddiadau a arall eitemau.
+Adnabuoch 'ch a all safle hon blaenau baffio a arall dashboard eitemau at yn dragio 'r deitl baria.
+Adnabuoch a alli adia ai dynnu dashboard eitemau at yn clecian 'r dashboard icon am 'r briga / dde chan hon dudalen.
+Adnabuoch a alli chyflea i fyny chliciedau at 'n effro 'ch pryd bethau damweinia , er enghraifft pryd somebody goes ar gerdded acha ddygwyl (Canfod <strong>'m Fanylion</strong>-&gt;<strong>'m Chliciedau</strong>).

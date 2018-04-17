@@ -1,0 +1,2 @@
+Besteht das Problem auf mehr als einem Rechner?
+Mit welchen Schritten kann der/die Bearbeiter/in das Problem reproduzieren? 

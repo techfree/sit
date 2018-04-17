@@ -1,0 +1,1 @@
+Die einzelnen zeitgesteuerten Aktionen müssen aktiviert sein, damit sie ausgeführt werden. Falls der Status für eine Aktion auf 'Ausgeschaltet' gesetzt ist, wird die Aktion nie durchgeführt. 

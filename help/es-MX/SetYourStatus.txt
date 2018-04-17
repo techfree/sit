@@ -1,0 +1,3 @@
+* Definir su estado a 'No Aceptando' o a algún estado que no está aceptando, ej. 'Ausente por Enfermedad', automáticamente reasignará sus incidentes a sus sustitutos como se especificó en 'Mis Sustitutos'.
+
+* Definir su estado como 'Aceptando' reasignará todos los incidentes que no han tenido ninguna actividad (con sus ingenieros sustitutos) de regreso a usted.

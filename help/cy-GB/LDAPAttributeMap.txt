@@ -1,0 +1,8 @@
+Chofnoda briodoli mappings hun per bannod , i mewn 'r fformat"agoriad=>brisio".Er enghraifft:
+
+realname=>cn
+jobtitle=>title
+email=>mail
+phone=>phone
+forenames=>givenname
+surname=>surname

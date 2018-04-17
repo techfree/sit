@@ -1,0 +1,1 @@
+Die Zurücknahme einer Mitteilung löscht sie für alle Bearbeiter/innen, unabhängig davon, ob diese die Mitteilung gelesen haben oder nicht.

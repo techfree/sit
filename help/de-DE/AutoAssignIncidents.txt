@@ -1,0 +1,1 @@
+Tickets werden den Bearbeiter/innen auf Basis einer Auswertung ihrer aktuellen Auslastung mit Fällen, ihren Fachbereichen, ihrem Status und weiteren Kriterien automatisch vom SiT! zugeordnet. Die Funktion kann abgeschaltet und die Tickets dann manuell an die Bearbeiter/innen verteilt werden. 

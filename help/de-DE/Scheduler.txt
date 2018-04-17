@@ -1,0 +1,1 @@
+Zur Ausführung der zeitgesteuerten Aktionen hat SiT! ein Script 'auto.php', das Sie wiederkehrend via crontab oder mit einer anderen Methode (z.B. http://www.webcron.org/) starten sollten. 

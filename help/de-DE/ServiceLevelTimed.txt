@@ -1,0 +1,1 @@
+Wenn für die Dienstezusagen die Option 'Mit Zeitaufschreibung' gewählt wurde, dann erscheint ein zusätzlicher Reiter 'Aktivitäten' in der Ticketansicht und es wird für alle Arbeiten am Ticket der Zeitverbrauch protokolliert. 

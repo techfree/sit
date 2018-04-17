@@ -1,0 +1,11 @@
+Geben Sie die Zuordnungen von LDAP-Attributen zu Datenfeldern an,
+zeilenweise im Format "Feldname=>Attribut".
+
+Zum Beispiel:
+
+realname=>cn
+jobtitle=>title
+email=>mail
+phone=>phone
+forenames=>givenname
+surname=>surname

@@ -1,0 +1,4 @@
+¿Qué ha hecho el cliente para tratar de resolver el problema?
+¿Qué cambios en la configuración se han realizado¿
+¿Que actualizaciones/paquetes de servicio han sido instalados?
+

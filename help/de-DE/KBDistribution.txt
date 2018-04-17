@@ -1,0 +1,5 @@
+'Öffentlich' - Anzeige im SiT! Portal
+
+'Privat' - Nicht veröffentlichen.
+
+'Eingeschränkt' - Vertrauliche Information, die aber weitergegeben werden darf, wenn es erforderlich ist, z.B.: Info über einen Patch, der sich noch in der Entwicklung befindet.

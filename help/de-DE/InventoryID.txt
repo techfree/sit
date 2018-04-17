@@ -1,0 +1,1 @@
+Dies kann eine Inventarnummer, eine Seriennummer, die MAC Adresse oder ähnliches sein.

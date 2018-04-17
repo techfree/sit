@@ -1,0 +1,1 @@
+Zeigt an, ob das Nutzerkonto manuell angelegt wurde oder durch Import via LDAP.

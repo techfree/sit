@@ -1,0 +1,1 @@
+Esta es la fecha que el usuario inició (o iniciará) a trabajar. Esta fecha será usada solo para calcular los Días de Descanso y no afecta la posibilidad del usuario de registrarse en el sistema o hacer cualquier otra actividad.

@@ -1,0 +1,1 @@
+Cuando un nivel de servicio está marcado como 'Temporizado', una Pestaña de Actividades aparecerá en la Ventana de Incidentes, y el tiempo dedicado a cada actividad es registrado.

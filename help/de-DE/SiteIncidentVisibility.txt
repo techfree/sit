@@ -1,0 +1,8 @@
+<u>Niemand</u>
+Nur die Leute, die den Vertrag administieren, sehen die Tickets, die im Rahmen dieses Vertrages erstellt wurden. (In der Schlange 'Tickets der Niederlassung') 
+
+<u>Benannte Kontaktpersonen</u>
+Die für diesen Vertrag als Kontaktpersonen ausgewiesenen Leute sehen die Tickets, die unter ihrem Namen eröffnet wurden.
+
+<u>Alle Kontaktpersonen</u>
+Alle Kontaktpersonen der Niederlassung sehen alle Tickets, unabhängig davon, ob sie selbst berechtigt sind, Tickets in diesem Vertrag zu eröffnen.

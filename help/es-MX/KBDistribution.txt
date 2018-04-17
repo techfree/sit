@@ -1,0 +1,5 @@
+Público, aparece en la Página Principal.
+
+Privado, es información que nunca se libera a la gente en general.
+
+Restringido, es información sensible pero puede ser mencionada si se pregunta, Ej. información acerca de una corrección que sigue en desarrollo...

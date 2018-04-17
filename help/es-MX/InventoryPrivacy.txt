@@ -1,0 +1,1 @@
+<em>Privado</em> protege el nombre de usuario y contraseña de todos excepto del creador, <em>Administrador Solamente</em> protege los usuarios y contraseñas de todos excepto de los usuarios administradores.

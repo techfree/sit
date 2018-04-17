@@ -1,0 +1,93 @@
+<ul>
+    <li><a href='#about'>Über Support Incident Tracker</a></li>
+    <li>Support
+    <ul>
+        <li><a href='#incidents'>Tickets</a></li>
+        <li><a href='#addincident'>Ticket erstellen</a></li>
+        <li><a href='#incidentqueues'>Ticketschlangen</a></li>
+        <li><a href='#updateincident'>Ticket fortschreiben</a></li>
+        <li><a href='#closeincident'>Ticket schliessen</a></li>
+        <li><a href='#knowledgebase'>Wissensfundus</a></li>
+    </ul>
+    </li>
+    <li><a href='#morehelp'>Weitere Hilfe</a></li>
+</ul>
+
+
+<h3><a name='about'>Über Support Incident Tracker</a></h3>
+<p>Support Incident Tracker (oder SiT!) ist Freie Software lizensiert unter der <a href="http://www.gnu.org/licenses/">GNU General Public License (GPL)</a>. Es handelt sich um eine Webanwendung, die in der Programmiersprache PHP geschrieben ist und zur Datenhaltung die Datenbanksoftware MySQL nutzt. Die Anwendung dient zur Verwaltung von Anfragen (die per Telefon, Webformular oder E-Mail gestellt werden können) und Vorgangsverfolgung im technischen Support (Hotline etc.).</p>
+
+<p>Mit ihr verwalten Sie Kontaktpersonen, Niederlassungen, Support-Verträge und -Anfragen (Tickets) zusammen in einem System. Senden und empfangen Sie E-Mails direkt im SiT!. Zum Vorgang gehörige Dateien können gleich dort angehängt werden und im Ticket-Log finden Sie jegliche den Vorgang betreffende Kommunikation protokolliert. SiT! beachtet die Dienstezusagen (Service Level Agreements oder SLA), die Sie in Ihren Support-Verträgen zugesichert haben und warnt die Bearbeiter/innen in Fällen, wo diese nicht eingehalten werden oder die Überschreitung der Fristen droht.</p> 
+
+<h3><a name='incidents'>Tickets</a></h3>
+<p>Tickets sind der Dreh- und Angelpunkt in SiT! Die englischsprachige Version des &quot;Support <em>Incident</em> Tracker&quot; nutzt an der Stelle das Wort 'Incident', was man als 'Vorfall' oder 'Ereignis' übersetzen kann. Etwas konkreter ist in vielen ähnlichen Systemen die Rede von <em>Support-Anfragen</em>, <em>Kundendienstanforderungen</em> oder <em>Helpdesk-Tickets</em>. In der deutschen Übersetzung von SiT! haben wir uns dazu entschlossen den Begriff 'Ticket' zu verwenden und damit auf das Datenobjekt zu referenzieren, das bei Eingang Ihrer Anfrage im System angelegt wird.</p>
+
+<p>Bezug auf Tickets nehmen Sie üblicherweise mit Verweis auf deren eindeutige Nummer, hier 'Ticket-Nummer' genannt. 
+Tickets haben einen Titel (der das Anliegen bezeichnet), ein Produkt (für das Unterstützung in Anspruch genommen wird), einen Vertrag (innerhalb dessen die Unterstützung geleistet wird) und eine Kontaktperson (die die Anfrage gestellt hat) und möglicherweise weitere Informationen.</p>
+
+<p>Wenn ein Ticket erstellt wurde, gibt es in der Regel eine Person, die das Ticket <em>besitzt</em>, d.h. die für die Bearbeitung des Tickets zuständig ist. Solange das Ticket geöffnet ist, kann der/die Besitzer/in wechseln, wenn das Ticket neu zugeordnet wird.</p>
+
+<p>Jedes Ticket hat einen aktuellen Status aus folgender Auswahl:</p>
+<ul>
+<li>Aktiv</li>
+<li>Geschlossen</li>
+<li>Analyse erforderlich</li>
+<li>Angerufen und Nachricht hinterlassen</li>
+<li>Wartet auf Abschluss</li>
+<li>Wartet auf Reaktion des Kunden</li>
+<li>Wartet auf Rückmeldung von Mitarbeiter/in</li>
+<li>Wartet auf Antwort des Supports</li>
+<li>Kein Support</li>
+</ul>
+
+<p>Tickets erhalten beim Schliessen zusätzlich einen Abschluss-Status:</p>
+<ul>
+<li>Aktion durchgeführt</li>
+<li>Dublette</li>
+<li>Eskaliert</li>
+<li>Nicht länger relevant</li>
+<li>Fehler gemeldet</li>
+<li>Informationen versandt</li>
+<li>Problem gelöst</li>
+<li>Support abgelaufen</li>
+<li>Ungelöst</li>
+<li>Kein Support</li>
+</ul>
+
+<p>Zu jedem Ticket wird ein sogenanntes 'Ticket-Log' geführt. Dort finden sich Einträge zu allen Fortschreibungen, die das Ticket im Laufe seines Lebens erfahren hat. Es ist eine komplette Aufzeichnung aller Kontakte zum Kunden, zu Mitarbeiter/innen des Teams sowie mit externen Ingenieur/innen.</p>
+
+<p>Den Tickets können auch Dateien angehängt werden.</p>
+
+<h3><a name='addincident'>Ticket erstellen</a></h3>
+<p>Bevor Sie ein Ticket erstellen können, muss ein Vertrag existieren, der Sie berechtigt, Unterstützung anzufordern.</p>
+
+<p>Es ist sehr einfach ein Ticket zu erstellen und das geht so:</p>
+<ol>
+<li>Wählen Sie den Fachbereich, dem Ihr Anliegen zuzuordnen ist (z.B. SUSE Linux, Apache)</li>
+<li>Geben Sie einen Titel für das Ticket an (Es sollte eine Kurzfassung Ihres Anliegens sein)</li>
+<li>Beschreiben Sie Ihr Problem oder Anliegen. Geben Sie dabei soviel Informationen wie möglich mit, damit wir die das gemeldete Problem alsbald lösen können bzw. die aufgetragenen Dienstleistung in Ihrem Sinne ohne Nachfragen schnell und gut erbringen können.</li> 
+<li>Klicken Sie auf den Buttton <strong>Ticket hinzufügen</strong> und schon ist das Ticket erstellt.</li>
+</ol>
+
+<h3><a name='incidentqueues'>Ticket-Schlangen</a></h3>
+
+<p>Unter Menüpunkt 'Tickets' finden Sie zwei Ticket-Schlangen, eine mit Ihren offenen Tickets, eine mit Ihren geschlossenen Tickets.</p>
+
+<p>Je nach Konfiguration können Sie auch zwei weitere Ticket-Schlangen sehen, eine mit den offenen Tickets Ihrer Niederlassung und eine mit den kürzlich geschlossenen Tickets Ihrer Niederlassung.</p>
+
+<h3><a name='updateincident'>Ticket fortschreiben</a></h3>
+
+<p>Wenn Sie ein Ticket ausgewählt haben, können Sie die Informationen dazu fortschreiben. Die Ergänzungen werden dem Ticket beigefügt und sein Status wechselt auf 'aktiv', so dass der/die Bearbeiter/in über die Fortschreibung informiert wird und den Faden aufnehmen kann.</p>
+
+<h3><a name='closeincident'>Ticket schliessen</a></h3>
+<p>Wenn Sie das Problem zwischenzeitlich gelöst haben, alle Fragen beantwortet sind oder Ihr Anliegen gegenstandslos geworden ist, können Sie den Abschluss des Tickets anfordern. Gehen Sie auf die Ansicht des Tickets, wählen links den Menüpunkt 'Ticket soll geschlossen werden' und geben im Formular den Grund an, warum das Ticket geschlossen werden kann. Anschliessend drücken Sie den Button <strong>'Ticket soll geschlossen werden'</strong>. Damit wird das Ticket zum Abschluss markiert und kann dann durch den/die Bearbeiter/in geschlossen werden.</p>
+
+<h3><a name='knowledgebase'>Wissensfundus</a></h3>
+
+<p>Im Wissensfundus können Sie nach veröffentlichten Anleitungen schauen, die Ihnen bei der Lösung Ihres Problems helfen können.</p>
+
+<hr />
+
+<h3><a name='morehelp'>Weitere Hilfe</a></h3>
+
+<p>Das SiT! Wiki im Internet bietet <a href="http://sitracker.org/wiki/Manual/DE">umfassende Dokumentation</a> sowie <a href="http://sitracker.org/wiki/FAQ">Antwort auf häufig gestellte Fragen</a>.</p>

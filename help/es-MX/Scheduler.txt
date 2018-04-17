@@ -1,0 +1,1 @@
+Para ejecutar estas actividades programadas por SiT! hay un script llamado auto.php que debería de ejecutarse de manera periodica vía crontab o algún otro método (Ej. http://www.webcron.org/).

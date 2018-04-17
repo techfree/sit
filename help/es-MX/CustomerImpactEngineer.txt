@@ -1,0 +1,3 @@
+¿Cuantos usuarios son afectados por este problema?
+¿Este problema hace que se caiga el sistema?
+¿Este problema evita que la gente pueda trabajar?

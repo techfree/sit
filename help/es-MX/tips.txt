@@ -1,0 +1,16 @@
+### SiT Tips de Uso, uno por línea...	(esta primer línea es ignorada automáticamente)
+Para registrar un nuevo Incidente de Soporte elija <strong>Agregar Incidente</strong> del menú <strong>Soporte</strong>.
+¿Sabía usted que puede ver las Filas de Incidentes de otras personas? Vaya a <strong>SiT!</strong>-&gt;<strong>Usuarios</strong> y haga clic en el enlace de la columna <strong>Incidentes en Fila</strong>
+Puede mantener a la vista todos los incidentes actualmente abiertos al usar la opción <strong>Soporte</strong>-&gt;<strong>Monitorear Incidentes</strong>.
+Al definir sus Habilidades (<strong>SiT!</strong>-&gt;<strong>Mis Detalles</strong>-&gt;<strong>Mis Habilidades</strong>) los incidentes aparecerán en su Fila de Espera, independientemente si fueron asignados o no directamente a usted.
+Para que sus incidentes sean asignados temporalmente a algún ingeniero sustituto, basta con definir su estado como 'Fuera de Oficina', y definir un ingeniero de respaldo por cada producto que soporte (<strong>SiT!</strong>-&gt;<strong>Mis Detalles</strong>-&gt;<strong>Mis Sustitutos</strong>).
+Un sitio puede tener uno o mas contratos, cada contrato especifíca el producto soportado, el número de incidentes que pueden ser registrados y los contactos permitidos para registrar incidentes.
+Usted puede mover el ratón encima del título del incidente en la fila de incidentes, verá una ventana emergente que mostrará un resúmen de la última actualización al incidente.
+Los incidentes pueden ser registrados con diferentes prioridades según el impacto que el problema este teniendo con los clientes. Desde <em>Bajo</em> que indica poco o no impacto hasta <em>Crítico</em> que indica la severidad del problema.
+Cuando salga de la oficina, asigne su estado usando la opción indicada en la página principal, esto automáticamente asignará sus incidentes a su(s) ingeniero(s) sustituto(s).
+Cuando usted marca una Tarea como Privada, será visible solamente para usted, una característica útil para tener recordatorios.
+¿sabía que puede asignar etiquetas a los incidentes, tareas, contactos y otros elementos?
+¿Sabía usted que que la posición de este cuadro y de otros elementos del Panel de Trabajo se pueden arrastrar haciendo clic en el título de la ventana?
+¿Sabía usted que puede agregar o remover elementos del Panel de Trabajo haciendo clic en el icono en la esquina superior derecha de ésta página?
+¿Sabía usted que puede definid Disparadores que le alerte cuando algo sucede, por ejemplo cuando alguien se va de descanso (Ver <strong>Mis Detalles</strong>-&gt;<strong>Mis Disparadores</strong>).
+

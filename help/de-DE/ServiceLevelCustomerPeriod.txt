@@ -1,0 +1,1 @@
+Anzahl von Minuten, die einer Berechnungseinheit für Kunden entspricht. In diesen Einheiten (z.B. 60 Minuten) wird mit den Kunden abgerechnet. 

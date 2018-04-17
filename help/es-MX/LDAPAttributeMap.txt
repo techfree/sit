@@ -1,0 +1,10 @@
+Ingrese el mapeo de atributos, uno por línea en el formato "Llave=>Valor".
+
+Ej.
+
+nombre=>cn
+trabajo=>titulo
+corrreo=>email
+telefono=>tel
+nombre=>nombre
+apellido=>apellido

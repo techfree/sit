@@ -1,0 +1,1 @@
+'Eingeschränkt' kennzeichnet Informationen, die vertraulich sind, aber in begründeten Fällen mitgeteilt werden können, z.B. Info über einen Patch, der sich noch in der Entwicklung befindet.

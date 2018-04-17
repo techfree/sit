@@ -1,0 +1,1 @@
+Esta es la cantidad de sobrecarga que el cliente puede solicitar antes que ellos no puedan registrar ningún otro Incidente.

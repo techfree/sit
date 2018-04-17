@@ -1,0 +1,1 @@
+At hidla hyn atodlen chyngawsion SiT! has a script alwedig auto.php a ddylasech hidla 'n gyfnodol via a crontab ai arall drefn.(e.g. http://www.webcron.org/).

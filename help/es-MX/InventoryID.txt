@@ -1,0 +1,1 @@
+Este puede ser el número de activo fijo, el número de serie, la dirección MAC, etc.

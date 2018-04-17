@@ -1,0 +1,3 @@
+Este Tablero le permite accesar a componentes agregados que muestran elementos interesantes de información.
+
+Usted puede arrastrarlos y reacomodarlos, o hacer clic sobre el icono de la derecha para agregar nuevos componentes o removerlos.

@@ -1,0 +1,1 @@
+Einige zeitgesteuerte Aktionen brauchen weitere Parameter. Schauen Sie in die Beschreibung der einzelnen Aufgaben um weitere Informationen zu erhalten, falls vorhanden.

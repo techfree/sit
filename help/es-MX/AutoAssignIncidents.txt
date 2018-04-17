@@ -1,0 +1,1 @@
+Los Incidentes son asignados de manera automática a los usuarios basado en un sorteo de fortalezas, tomando en cuenta factores como el número de incidentes, las habilitades apropiadas, estado y más. Esta funcionalidad puede ser apagada para permitir que los incidentes sean asignados manualmente.

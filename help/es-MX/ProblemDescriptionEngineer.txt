@@ -1,0 +1,1 @@
+Tanta información como sea posible que describa el problema, suficiente para que un ingeniero pueda iniciar la investigación correspondiente del problema sin necesidad de contactar al cliente en el primer momento.

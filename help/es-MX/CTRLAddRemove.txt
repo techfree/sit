@@ -1,0 +1,3 @@
+Para agregar más a la selección presione la tecla CTRL y haga clic sobre su elección.
+
+Para remover cualquier elección, vuelva ha usar la tecla CTRL y haga clic sobre el elemento previamente seleccionado.

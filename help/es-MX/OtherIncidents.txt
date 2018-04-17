@@ -1,0 +1,1 @@
+La fila de 'Otros Incidentes' son los Incidentes que coinciden con el conjunto de habilidades que has definido en la opción 'Mis Habilidades'.

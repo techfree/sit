@@ -1,0 +1,1 @@
+Anzahl Minuten, die einer Berechnungseinheit von Ingenieuren/Ingenieurinnen entspricht. Diese Angabe kann zur Berechnung von deren Honoraren herangezogen werden.

@@ -1,0 +1,1 @@
+Dies ist das Datum zu dem der/die Bearbeiter/in mit der Arbeit begonnen hat oder beginnen wird. Es wird nur zur Verwaltung der Urlaubsansprüche herangezogen und hat keine Auswirkungen auf die Möglichkeit, sich ins System einzuloggen oder auf sonst irgendetwas.

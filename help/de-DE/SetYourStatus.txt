@@ -1,0 +1,3 @@
+* Wenn Sie Ihren Status auf 'Keine Annahme von Tickets' oder auf einen anderen Status setzen, der keine Annahme von Tickets zuläßt, wie z.B. 'Abwesend (Krank)', werden Ihre Tickets automatisch Ihrem/Ihrer Vertreter/in zugeordnet.
+
+* Sobald Sie Ihren Status wieder auf 'Nehme Tickets an' setzen, werden die Tickets, die zwischenzeitlich nicht von jemand anderem bearbeitet wurden, wieder Ihnen zugeordnet. 

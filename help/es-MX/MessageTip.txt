@@ -1,0 +1,3 @@
+Ej. "En francia hasta el 22 del mes..."
+
+Se muestra en la "Vista de Usuarios" para información de sus colegas de trabajo.
